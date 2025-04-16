@@ -41,12 +41,22 @@ A web application for visualizing and forecasting world population trends using 
    pip install -r requirements.txt
    ```
 
-4. Run the application:
+4. Download the required Geographic Data for maps:
+   - Visit [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
+   - Download the "Admin 0 – Countries" shapefile (Download countries, ~4.7MB)
+   - Extract the downloaded zip file
+   - Copy the following files to `data/10m_cultural/10m_cultural/` directory:
+     - `ne_10m_admin_0_countries.shp` (Main shapefile)
+     - `ne_10m_admin_0_countries.dbf` (dBASE table containing attribute data)
+     - `ne_10m_admin_0_countries.prj` (Projection description)
+     - `ne_10m_admin_0_countries.shx` (Shape index)
+
+5. Run the application:
    ```
    python app.py
    ```
 
-5. Open your browser and navigate to:
+6. Open your browser and navigate to:
    ```
    http://localhost:5001
    ```
